@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  /* 62.5% = 10px = 1rem */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --body-color: #fff;
+  --background-color: #f8f8f8;
+
+  --primary-color: #252160;
+  --secondary-color: #3affe5;
+
+  --text-color-white: #ffffff;
+  --text-color-light-blue: #32b5ff;
+  --text-color-gray: #7b7b7b;
+  --star-color: #ff9900;
+}
+
+/* MOBILE DEVICES */
+.container {
+  min-width: 37.5rem;
+  min-height: 74.5rem;
+}
+
+header {
+  width: 100%;
+  height: 6.9rem;
+  background: var(--body-color);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+}
+
+.menu ul li {
+  text-align: center;
+}
+
+.menu ul li a {
+  position: relative;
+}
+
+/* Escondendo menu mobile */
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+nav .menu ul {
+  display: none;
+}
+
+/* mostrar Menu */
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav.show .menu {
+  display: grid;
+  place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+/* toggle menu */
+
+.toggle {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.toggle:hover {
+  cursor: pointer;
+  color: var(--text-color-gray);
+  transition: 0.2s;
+}
+
+nav .icon-close {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  transition: 0.2s;
+}
+
+nav.show div.icon-close {
+  opacity: 1;
+  visibility: visible;
+  top: 1rem;
+}
+
+/* main content */
+
+.container.primary {
+  background: var(--primary-color);
+}
+
+main .content {
+  width: 31.4rem;
+  min-height: 28.6rem;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  padding: 20rem 0 20rem 0;
+}
+
+main .content .container-robot-text p {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+main .content .emphasis {
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem;
+  color: var(--body-color);
+}
+
+main .content .emphasis > span {
+  color: var(--secondary-color);
+}
+main .content p {
+  margin: 2.3rem 0 2rem 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--body-color);
+}
+
+main .button-container {
+  margin: 9.5rem auto 0;
+  width: 29.5rem;
+  height: 4.585rem;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 0.75rem;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main .button-container a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+main .button-container i {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  align-self: center;
+}
+
+/* Caurrosel */
+.institutions {
+  display: flex;
+  padding: 5rem;
+}
