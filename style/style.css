@@ -29,6 +29,8 @@ a {
   --text-color-white: #ffffff;
   --text-color-light-blue: #32b5ff;
   --text-color-gray: #7b7b7b;
+  --text-title-secundary-color: #3c5882;
+  --bg-color-gradient: #26dad9;
   --star-color: #ff9900;
 
   /* fonts */
@@ -340,13 +342,51 @@ section .button-container.primary i {
   transform: rotate(-1deg);
 }
 
-/* sales */
+/* Sales */
 
-/* .sale-header img {
-  position: relative;
-  left: 35rem;
-  top: -5rem;
-} */
+.container.sales {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.container.sales {
+  text-align: center;
+}
+
+.container.sales > h2 {
+  margin-top: 5rem;
+  color: var(--text-color-light-blue);
+  font-size: 2rem;
+  line-height: 2.728rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--font-title-secondary);
+}
+
+.container.sales > h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  line-height: 2.178rem;
+  font-weight: 600;
+  font-family: var(--font-default);
+  margin-bottom: 5rem;
+}
+
+.container .sales-container.primary {
+  background-color: var(--primary-color);
+}
+
+.container .sales-container {
+  display: grid;
+  width: 31.959rem;
+  height: 38.799rem;
+  border-radius: 1rem;
+  text-align: left;
+}
 
 .sales-container .sale-header {
   display: flex;
@@ -354,21 +394,142 @@ section .button-container.primary i {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.sales-container .sale-title {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.sales-container .sale-title h2 {
+  color: var(--text-color-white);
+  font-family: var(--font-title-secondary);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.182rem;
+  margin-top: 0.5rem;
+}
+
+.sales-container .sale-title > p {
+  color: var(--text-title-secundary-color);
+  font-size: 1.2rem;
+  line-height: 1.637rem;
+  font-family: var(--font-title-secondary);
+  font-weight: 700;
 }
 
 .sale-header .highlight-discount {
   background-image: url("../assets/star.png");
-  width: 8.4rem;
-  height: 8.7rem;
+  width: 8.3rem;
+  height: 8.8rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   transform: rotate(15deg);
+  margin-right: 0.8rem;
 }
 
 .sale-header .highlight-discount sup {
-  margin-top: 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-title-secondary);
+  line-height: 2.728rem;
+  color: #252160;
 }
+.sale-header .highlight-discount span {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.091rem;
+  font-family: var(--font-title-secondary);
+  color: #252160;
+}
+
+.sales-container .container-benefits {
+  display: grid;
+  gap: 1rem;
+}
+
+.sales-container .container-benefits span {
+  margin-left: 2rem;
+  font-family: var(--font-title-secondary);
+  font-weight: 700;
+  line-height: 1.637rem;
+  font-size: 1.2rem;
+  color: var(--text-color-light-blue);
+}
+
+.sales-container .container-benefits .benefits-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  justify-content: center;
+  width: 23.268rem;
+  height: 13.817rem;
+  margin: 0 auto;
+  gap: 0.7rem;
+}
+
+.sales-container .container-benefits .benefits-list li {
+  font-size: 0.9rem;
+  font-family: var(--font-title-secondary);
+  font-weight: 400;
+  line-height: 1.76rem;
+  color: var(--text-color-white);
+}
+
+.sales-container .container-benefits .benefits-list li i {
+  margin-right: 0.8rem;
+}
+
+.sales-container .container-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.sales-container .container-price .price span {
+  font-size: 0.8rem;
+  color: var(--text-color-gray);
+  font-weight: 300;
+}
+
+.sales-container .container-price .price .highlight-price {
+  color: var(--text-color-white);
+  font-size: 2rem;
+}
+.sales-container .container-price .price .highlight-price sup {
+  font-size: 0.8rem;
+  color: var(--text-color-gray);
+}
+
+.sales-container .container-price .price .highlight-price .first-sup-price {
+  color: var(--secondary-color);
+}
+
+.sales-container .container-price .button-container {
+  width: 11.158rem;
+  height: 3.364rem;
+  background: var(--bg-color-gradient);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.sales-container .container-price .button-container a {
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-color-white);
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+
+
 
 .testimonials p::after {
   width: 5.5rem;
