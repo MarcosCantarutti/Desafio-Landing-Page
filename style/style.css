@@ -10,11 +10,6 @@ html {
   /* 62.5% = 10px = 1rem */
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
 ul,
 li {
   list-style: none;
@@ -25,8 +20,8 @@ a {
 }
 
 :root {
-  --body-color: #fff;
-  --background-color: #f8f8f8;
+  --background-color-primary: #fff;
+  --background-color-secondary: #f8f8f8;
 
   --primary-color: #252160;
   --secondary-color: #3affe5;
@@ -35,6 +30,16 @@ a {
   --text-color-light-blue: #32b5ff;
   --text-color-gray: #7b7b7b;
   --star-color: #ff9900;
+
+  /* fonts */
+  --font-default: "Inter", sans-serif;
+  --font-title-primary: "Fredoka One", cursive;
+  --font-title-secondary: "Nunito", sans-serif;
+}
+
+body {
+  font-family: var(--font-default);
+  -webkit-font-smoothing: antialiased;
 }
 
 /* MOBILE DEVICES */
@@ -46,7 +51,7 @@ a {
 header {
   width: 100%;
   height: 6.9rem;
-  background: var(--body-color);
+  background: var(--background-color-primary);
 }
 
 .nav-container {
@@ -150,9 +155,9 @@ main .content .container-robot-text p {
   font-weight: 600;
 }
 main .content .emphasis {
-  font-family: "Fredoka One", cursive;
+  font-family: var(--font-title-primary);
   font-size: 4rem;
-  color: var(--body-color);
+  color: var(--text-color-white);
 }
 
 main .content .emphasis > span {
@@ -162,14 +167,14 @@ main .content p {
   margin: 2.3rem 0 2rem 0;
   font-size: 1.4rem;
   font-weight: 400;
-  color: var(--body-color);
+  color: var(--text-color-white);
 }
 
-main .button-container {
+main .container .button-container.secondary {
   margin: 9.5rem auto 0;
   width: 29.5rem;
   height: 4.585rem;
-  background: var(--secondary-color);
+
   border: none;
   border-radius: 0.75rem;
   text-align: center;
@@ -180,20 +185,164 @@ main .button-container {
   gap: 2rem;
 }
 
-main .button-container a {
+main .container .button-container.secondary {
+  background: var(--secondary-color);
+}
+
+main .container .button-container.secondary a {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--primary-color);
 }
 
-main .button-container i {
+main .container .button-container.secondary i {
   font-size: 1.6rem;
   color: var(--primary-color);
   align-self: center;
 }
 
-/* Caurrosel */
+/* section institutions and  services*/
+
 .institutions {
   display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /* Criando rolagem lateral */
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+
+.institutions li {
+  padding: 1rem;
+  margin: 0 auto;
+  min-height: 2.5rem;
+}
+
+/* services */
+
+.cards-container {
+  display: grid;
   padding: 5rem;
+  gap: 2.7rem;
+  margin: 5rem auto 10rem;
+}
+
+.card {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card img {
+  display: block;
+  align-self: center;
+  justify-self: center;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.card p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-color-gray);
+  max-width: 25rem;
+}
+
+/* new button */
+
+section .button-container.primary {
+  background: var(--primary-color);
+  margin: 0 auto 4.3rem;
+  width: 30rem;
+  height: 5.7rem;
+
+  border: none;
+  border-radius: 0.75rem;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+section .button-container.primary a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-color-white);
+}
+
+section .button-container.primary i {
+  font-size: 1.6rem;
+  color: var(--text-color-white);
+  align-self: center;
+}
+
+/* more content */
+.container.secondary {
+  background: var(--background-color-secondary);
+  padding: 5rem;
+}
+
+.container.secondary .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+  margin: 4rem 5rem 4rem 5rem;
+  min-width: 2.73rem;
+  min-height: 1.77rem;
+}
+
+.container.secondary .information h2 {
+  font-size: 2rem;
+  color: var(--text-color-light-blue);
+  font-weight: 700;
+  line-height: 2.728rem;
+  text-transform: uppercase;
+  font-family: var(--font-title-secondary);
+}
+
+.container.secondary .information span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.178rem;
+  color: var(--primary-color);
+}
+
+.container.secondary .information p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.452rem;
+  color: var(--text-color-gray);
+}
+
+.container.secondary .img-1 {
+  width: 29.8rem;
+  height: 29.8rem;
+  margin: 3.9rem;
+}
+
+.container.secondary .img-2 {
+  width: 28.628rem;
+  height: 31.24rem;
+  margin: 4.2rem 1.02rem 2.117rem 1.8rem;
+  transform: rotate(-1deg);
+}
+
+/* sales */
+
+.testimonials p::after {
+  width: 5.5rem;
+  content: url("../assets/quotes.svg");
 }
