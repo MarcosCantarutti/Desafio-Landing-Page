@@ -342,6 +342,34 @@ section .button-container.primary i {
 
 /* sales */
 
+/* .sale-header img {
+  position: relative;
+  left: 35rem;
+  top: -5rem;
+} */
+
+.sales-container .sale-header {
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.sale-header .highlight-discount {
+  background-image: url("../assets/star.png");
+  width: 8.4rem;
+  height: 8.7rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transform: rotate(15deg);
+}
+
+.sale-header .highlight-discount sup {
+  margin-top: 3rem;
+}
+
 .testimonials p::after {
   width: 5.5rem;
   content: url("../assets/quotes.svg");
