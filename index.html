@@ -5,61 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style -->
-    <link rel="stylesheet" href="./assets/fonts/style.css">
+    
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;500;600&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <!-- font awesome quote and icons-->
+    <!-- font awesome quote and icons, stars-->
+    <link rel="stylesheet" type="text/css" href="glider.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <!-- style -->
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/splide.min.css">
 
     <title>Logoipsum</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-container">
-            <div class="logo">
-                <img src="./assets/logo-mobile.svg" class="mobile-logo" alt="Logo para telas mobile"> 
-                <!-- <img src="./assets/logo-desktop.svg" class="desktop-logo" alt="Logo para telas mobile">  -->
+    <header id="home">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <img src="./assets/logo-desktop.svg" alt="logo" class="navbar-logo-desktop">
+                <img src="./assets/logo-mobile.svg" alt="logo" class="navbar-logo-mobile">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <!-- MENU -->
+            
+            
             <div class="menu">
-                <ul>
-                    <li><a class="title" href="#home">Home</a></li>
-                    <li><a class="title" href="#about">Quem somos</a></li>
-                    <li><a class="title" href="#services">Planos</a></li>
-                    <li><a class="title" href="#contact">Fale Conosco</a></li>
-                    <li><button class="button-min primary">Entrar</button></li>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="#home">Home</a></li>
+                    <li class="navbar-item"><a href="#about">Quem somos</a></li>
+                    <li class="navbar-item"><a href="#packages">Planos</a></li>
+                    <li class="navbar-item"><a href="#contact">Fale conosco</a></li>
+                    <li class="navbar-item"><a  href="#" class="btn">Entrar</a></li>
                 </ul>
             </div>
-            <!-- MENU -->
-            <div class="toggle icon-menu"></div>
-            <div class="toggle icon-close"></div>
-        </nav>
-    </header>
+        </header>
 <!-- End Header -->
     <main>
         <section class="container primary">
-            <div class="content">
-                <div class="container-robot-text">
-                    <img class="robot" src="./assets/robot.png" alt="Desenho de um robo">
-                    <p>Seja um aprovado no Enem e Vestibulares :)</p>
-                </div>
-
-                <p class="emphasis">Você escolhe <br>
-                    o que aprender<span>.</span></p>
-                <p>Aqui você terá toda assistencia que precisa com materiais desenvolvidos por <strong> mestres e doutores em matemática</strong> </p>
-
-                <div class="button-container secondary">
-                    <a href="#" class="button-max ">Veja nossos planos </a>
-                    <i class="fas fa-arrow-right"></i>
+            <div class="background-container">
+                <div class="content">
+                    <div class="content-text">
+                        <div class="container-robot-text">
+                            <img class="robot" src="./assets/robot.png" alt="Desenho de um robo">
+                            <p>Seja um aprovado no Enem e Vestibulares :)</p>
+                        </div>
+        
+                        <p class="emphasis">Você escolhe <br>
+                            o que aprender<span>.</span></p>
+                        <p>Aqui você terá toda assistencia que precisa com materiais desenvolvidos por <strong> mestres e doutores em matemática</strong> </p>
+        
+                        <div class="button-container secondary">
+                            <a href="#" class="button-max ">Veja nossos planos </a>
+                            <i class="fas fa-arrow-right"></i>
+                            
+                        </div>
+                    </div>
                     
-                </div>
+                    <img class="bg-home" src="./assets/home-bg-desktop.png" alt="">
+            </div>
+           
            
             </div>
         </section>
@@ -95,210 +105,268 @@
             </div>
 
             <div class="cards-container">
-                <div class="card">
-                    <img src="./assets/math-img.png" alt="" srcset="">
-                    <h2>100% focado na Matemática</h2>
-                    <p>Todo material é construido por profissionais especializados e com foco no perfil de cada vestibular</p>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/math-img.png" alt="" srcset="">
+                         <div>
+                            <h2>100% focado na Matemática</h2>
+                            <p>Todo material é construido por profissionais especializados e com foco no perfil de cada vestibular</p>
+                         </div>          
+                        
+                    </div>
+                    <div class="card">
+                        <img src="./assets/partner-img.png" alt="" srcset="">
+                        <div>
+                            <h2>100% focado na Matemática</h2>
+                            <p>Todo material é construido por profissionais especializados e com foco no perfil de cada vestibular</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="./assets/partner-img.png" alt="" srcset="">
+                         <div>
+                            <h2>100% focado na Matemática</h2>
+                            <p>Todo material é construido por profissionais especializados e com foco no perfil de cada vestibular</p>
+                         </div>   
+                        
+                    </div>
+                    <div class="button-container primary">
+                        
+                        <a href="#">Quero ser aprovado </a>
+                        <i class="fas fa-arrow-right"></i>
+                        
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="./assets/partner-img.png" alt="" srcset="">
-                    <h2>100% focado na Matemática</h2>
-                    <p>Todo material é construido por profissionais especializados e com foco no perfil de cada vestibular</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/partner-img.png" alt="" srcset="">
-                    <h2>100% focado na Matemática</h2>
-                    <p>Todo material é construido por profissionais especializados e com foco no perfil de cada vestibular</p>
-                </div>
+                
+
+                <img  class="bg-img" src="./assets/girl.png" alt="">
             </div>
 
-            <div class="button-container primary">
-                <a href="#">Quero ser aprovado </a>
-                <i class="fas fa-arrow-right"></i>
-                
-            </div>
+            
         </section>
 
         <section class="container secondary">
             <div class="information">
-                <h2>100% Matemática</h2>
+                <div>
+                    <img  class="img-1" src="./assets/rocket.png" alt="Menino em um foguete">
+                </div>
+                <div class="text-container"><h2>100% Matemática</h2>
                 <span>Matemática para quem quer entrar na facul.</span>
-                <p>Somos um cursinho online especialista em ensinar matemática. Temos os melhores professores mestres e doutores para tirar suas dúvidas e te ensinar matemática desde a teoria até a resolução de exercícios de todos os níveis</p>
+                <p>Somos um cursinho online especialista em ensinar matemática. Temos os melhores professores mestres e doutores para tirar suas dúvidas e te ensinar matemática desde a teoria até a resolução de exercícios de todos os níveis</p></div>
+                
+                
+                
             </div>
-            <img  class="img-1" src="./assets/rocket.png" alt="Menino em um foguete">
+           
 
             <div class="information">
-                <h2>Quer ser aprovado?</h2>
-                <span>Se seu foco é ser aprovado, nós estamos aqui por você.</span>
-                <p>Somos um cursinho online especialista em ensinar matemática. Temos os melhores professores mestres e doutores para tirar suas dúvidas e te ensinar matemática desde a teoria até a resolução de exercícios de todos os níveis</p>
+                <div class="text-container">
+                    <h2>Quer ser aprovado?</h2>
+                    <span>Se seu foco é ser aprovado, nós estamos aqui por você.</span>
+                    <p>Somos um cursinho online especialista em ensinar matemática. Temos os melhores professores mestres e doutores para tirar suas dúvidas e te ensinar matemática desde a teoria até a resolução de exercícios de todos os níveis</p>
+                </div>
+              
+                <div>
+                    <img class="img-2" src="./assets/winner.png" alt="Menino vencendo!">
+                </div>
+                
             </div>
-            <img class="img-2" src="./assets/winner.png" alt="Menino vencendo!">
+           
         </section>
 
 <!-- section sales container and itens -->
+
         <section class="container sales">
                 <h2>Nossos planos</h2>
                 <h3>Invista no seu futuro</h3>
-            <div class="sales-container primary">
+                <div class="all-sales">
 
-                <div class="sale-header">
+                    <div class="sales-container primary">
 
-                    <div class="sale-title">
-                        <p>1 ano de acesso</p>
-                        <h2>Plano Recomendado</h2>
-                    </div> 
-                    
-                    <div class="highlight-discount">
-                        <sup>70%</sup>
-                        <span> de desconto</span> 
-                    </div>
-                    
-                </div>
-
-                <div class="container-benefits">
-                    <span class="benefits">vantagens</span>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check"></i> Acesso a todos os beneficios da Plataforma(videoaulas, Exercícios, Apostila e muito mais)</li>
-                        <li><i class="fas fa-check"></i> 35 aulas ao vivo</li>
-                        <li><i class="fas fa-check"></i> Revisão para o Enem</li>
-                        <li><i class="fas fa-check"></i> Grupo no whatsapp com professores e alunos</li>
-                        <li><i class="fas fa-check"></i> Reforço para FUVEST, Unicamp e Vestibulares de Medicina</li>
-                    </ul>
-                </div>
-                
-
-                <div class="container-price">
-                    <div class="price">
-                        <span>de R$178,80</span> 
-                        <div class="highlight-price">
-                            <sup class="first-sup-price">R$</sup>
-                            49,90
-                            <sup>/ ano</sup>
+                        <div class="sale-header">
+        
+                            <div class="sale-title">
+                                <p>1 ano de acesso</p>
+                                <h2>Plano Recomendado</h2>
+                            </div> 
+                            
+                            <div class="highlight-discount">
+                                <sup>70%</sup>
+                                <span> de desconto</span> 
+                            </div>
+                            
                         </div>
-                        <span>Menos de 5 reais por mes :)</span> 
-                    </div>
-
-                    <div class="button-container">
-                        <a href="#">Eu quero!</a>
-                    </div>
-                </div>
-                
-            </div>
-
-                <div class="sales-container secondary">
-                    <div class="sale-header">
-                        <span class="time-acess">1 ano de acesso</span>
-                        <h2>Plano Aprovado</h2>
+        
+                        <div class="container-benefits">
+                            <span class="benefits">vantagens</span>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check"></i> Acesso a todos os beneficios da Plataforma(videoaulas, Exercícios, Apostila e muito mais)</li>
+                                <li><i class="fas fa-check"></i> 35 aulas ao vivo</li>
+                                <li><i class="fas fa-check"></i> Revisão para o Enem</li>
+                                <li><i class="fas fa-check"></i> Grupo no whatsapp com professores e alunos</li>
+                                <li><i class="fas fa-check"></i> Reforço para FUVEST, Unicamp e Vestibulares de Medicina</li>
+                            </ul>
+                        </div>
+                        
+        
+                        <div class="container-price">
+                            <div class="price">
+                                <span>de R$178,80</span> 
+                                <div class="highlight-price">
+                                    <sup class="first-sup-price">R$</sup>
+                                    49,90
+                                    <sup>/ ano</sup>
+                                </div>
+                                <span>Menos de 5 reais por mes :)</span> 
+                            </div>
+        
+                            <div class="button-container">
+                                <a href="#">Eu quero!</a>
+                            </div>
+                        </div>
                         
                     </div>
-    
-                    <div class="container-benefits">
-                        <span class="benefits">vantagens</span>
-                        <ul class="benefits-list">
-                            <li>Acesso a todos os beneficios da Plataforma(videoaulas, Exercícios, Apostila e muito mais)</li>
-                            <li>35 aulas ao vivo</li>
-                            <li>Revisão para o Enem</li>
-                            <li>Grupo no whatsapp com professores e alunos</li>
-                            <li>Reforço para FUVEST, Unicamp e Vestibulares de Medicina</li>
-                        </ul>
-                    </div>
-                    
-    
-                    <div class="container-price">
-                        <div class="price">
-                            <span>de $178,80</span> 
-                            <sup>R$</sup>
-                            49,90
-                            <sup>/ ano</sup>
-                            <span>Menos de 5 reais por mes :)</span> 
+        
+                        <div class="sales-container secondary">
+                            <div class="sale-header">
+                                <div class="sale-title secondary">
+                                    <p>6 meses de Acesso</p>
+                                    <h2>Plano Aprovado</h2>
+                                </div> 
+                                
+                            </div>
+            
+                            <div class="container-benefits">
+                                <span class="benefits">vantagens</span>
+                                <ul class="benefits-list">
+                                    <li><i class="fas fa-check"></i> Acesso a todas as videoaulas</li>
+                                    <li><i class="fas fa-check"></i>Ganhe pontos resolvendo questões e troque por prêmios</li>
+                                    <li><i class="fas fa-check"></i> 3000 exercícios com resolução em vídeo</li>
+                                    <li><i class="fas fa-check"></i> 4 apostilas com todo o conteúdo de Matemática</li>
+                                    <li><i class="fas fa-check"></i> Reforço para FUVEST, Unicamp e Vestibulares de Medicina</li>
+                                </ul>
+                            </div>
+                            
+            
+                            <div class="container-price">
+                                <div class="price">
+                                    
+                                    <div class="highlight-price">
+                                        <sup class="first-sup-price">R$</sup>
+                                        39,90
+                                        <sup>/ semestre</sup>
+                                    </div>
+        
+                                </div>
+            
+                                <div class="button-container ">
+                                    <a href="#">Eu quero!</a>
+                                </div>
+                            </div>
+                            
                         </div>
-    
-                        <div class="button-container ">
-                            <a href="#">Eu quero!</a>
-                        </div>
-                    </div>
-                    
                 </div>
+            
 
+                <!-- testimonials -->
 
                 <h2>Depoimentos</h2>
-                <p>Recomendados por quem é expert no assunto</p>
+                <h3>Recomendados por<br> quem é expert no assunto</h3>
 
-                <div class="testimonial-container">
-                    <span>Starrater</span>
-                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt impedit dolore</q>
-
-                    <div class="testimonials">
-                        <img src="./" alt="Foto da pessoa">
-                        <div>
-                            <cite>Amanda Merien</cite>
-                            <p>Analista junior</p>
-                    
-                        </div>
+                <div class="testimonial-container splide">
+                    <div class="splide__track">
+		                <ul class="splide__list">
+                            <li class="splide__slide slide-1"><img src="./assets/review1.png" alt=""></li>
+                            <li class="splide__slide slide-2"><img src="./assets/review2.png" alt=""></li>
+                            <li class="splide__slide slide-3"><img src="./assets/review3.png" alt=""></li>
+                            <li class="splide__slide slide-1"><img src="./assets/review1.png" alt=""></li>
+                            <li class="splide__slide slide-2"><img src="./assets/review2.png" alt=""></li>
+                            <li class="splide__slide slide-3"><img src="./assets/review3.png" alt=""></li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+<!-- app section -->
+        <section class="container primary app">
+            <div class="content app-container">
+                <div class="text-container">
+                    <div class="container-robot-text app-header">
+                        <img class="robot" src="./assets/robot.png" alt="Desenho de um robo">
+                        <p>Baixe aulas no app e estude offline</p>
+                    </div>
+    
+                    <p class="app-info">Receba lembretes no seu celular e tenha a facilidade de estudar a qualquer hora e de qualquer lugar. Baixe nosso app e confira.</p>
+    
+                    <div class="button-container secondary app">
+                        <a href="#" class="button-max app">Conheça nosso aplicativo</a>
+                        <i class="fas fa-arrow-right"></i>
                         
                     </div>
                 </div>
-        </section>
+                
 
-        <section class="container primary">
-            <div class="content app">
-                <div class="container-robot-text">
-                    <img class="robot" src="./assets/robot.png" alt="Desenho de um robo">
-                    <p>Seja um aprovado no Enem e Vestibulares :)</p>
+                <div>
+                    <img class="bg-phone" src="./assets/phone.png" alt="" srcset="">
                 </div>
-
-                <p class="emphasis">Você escolhe <br>
-                    o que aprender<span>.</span></p>
-                <p>Aqui você terá toda assistencia que precisa com materiais desenvolvidos por <strong> mestres e doutores em matemática</strong> </p>
-
-                <div class="button-container secondary">
-                    <a href="#" class="button-max ">Veja nossos planos </a>
-                    <i class="fas fa-arrow-right"></i>
-                    
-                </div>
-
-                <img src="./assets/phone.png" alt="" srcset="">
+               
            
             </div>
         </section>
     </main>
 
-    <footer class="container secondary">
-        <img src="./assets/logo-footer.svg" alt="">
+    <footer>
 
-
-        <div class="localization">
-            <p>Av. Brg. Faria Lima, 1422</p>
-            <p>São Paulo - SP</p>
-        </div>
-
-        <div>
-            <p>(22)4442-0126</p>
-            <p>info@digihouse.com</p>
-        </div>
-
-        <div class="politics">
-            <a href="#">Direitos autorais</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Políticas de Privacidade</a>
-        </div>
-
-        <ul class="socials">
-            <li><i>Face</i></li>
-            <li><i>Twitter</i></li>
-            <li><i>Instagram</i></li>
-        </ul>
-
-        <div class="copy">
-            <span>&#169;</span>
-            <p>Copyright 2021, All Rights Reserved</p>
-        </div>
-
-       <span>arrow aqui</span>
-    </footer>
+        <section class="contacts-container">
+            <div class="footer-logo">
+                <img src="./assets/logo-footer.svg" alt="logoipsun logo" >
+                <div class="container-stores">
+                    <div class="store">
+                        <i class="fab fa-google-play"></i><a href="https://play.google.com/store?hl=pt_BR&gl=US" target="_blank">Diponivel no <br><strong>Google Play</strong> </a>
+                    </div>
+                    <div class="store">
+                        <i class="fab fa-apple"></i> <a href="https://www.apple.com/br/app-store/" target="_blank">Disponível na <br><strong>App Store</strong> </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="localization">
+                <h2>Localização</h2>
+                <p>Av. Brg. Faria Lima, 1422</p>
+                <p>São Paulo - SP</p>
+            </div>
     
-
+            <div class="contacts">
+                <h2>Fale Conosco</h2>
+                <p>(22)4442-0126</p>
+                <p>info@digihouse.com</p>
+            </div>
+    
+            <div class="politics">
+                <h2>Políticas</h2>
+                <p>Direitos autorais</p>
+                <p>Termos de Uso</p>
+                <p>Políticas de Privacidade</p>
+            </div>
+        </div>
+        </section>
+        <div class= "socials-container">
+            <div class="copy">
+                <span>&#169;</span>
+                <p>Copyright 2021, All Rights Reserved</p>
+            </div>
+            <div class="a-container">
+                <ul class="socials">
+                    <li><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="http://twitter.com" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+    
+                </ul>
+                <a href="#home" class="arrow-up"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/splide.min.js"></script>
     <script src="https://kit.fontawesome.com/ac7783596e.js" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
