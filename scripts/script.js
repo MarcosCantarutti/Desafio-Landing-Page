@@ -8,24 +8,23 @@ navbarBtn.addEventListener('click', () => {
 
 
 // testimonials slides 
-if(window.innerWidth > 900){
-    document.addEventListener( 'DOMContentLoaded', function() {
-        var splide = new Splide( '.splide',{
-            type   : 'loop',
+if (window.innerWidth > 900) {
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
             perPage: 3,
         });
         splide.mount();
-      } );
-}else{
-    document.addEventListener( 'DOMContentLoaded', function() {
-        var splide = new Splide( '.splide',{
-            type   : 'loop',
+    });
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
             perPage: 1,
         });
         splide.mount();
-      } );
+    });
 }
 
 
-  
-  
+
