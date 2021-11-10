@@ -44,6 +44,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.button-container:hover, button:hover{
+  cursor: pointer;
+	transform: scale(1.05);
+	
+}
+
 /* MOBILE DEVICES */
 .container {
   min-width: 37.5rem;
