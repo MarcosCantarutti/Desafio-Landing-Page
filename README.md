@@ -1,7 +1,7 @@
 # Desafio-Landing-Page
  Desáfio proposto para a criação de um layout da Landing Page seguindo um modelo do Figma
  
-# Get Starting (Começando)
+# Get Starting 
 Será necessário um computador ou dispositivo movél compátivel com algum navegador de internet (Ex Google Chrome, Firefox, Microsoft Edge e etc...)
 Para executar a aplicação voce poderá seguir de algumas formas como:
 
@@ -17,6 +17,6 @@ Caso esteja pelo celular é possivel acessar diretamente pelo link para ver a ve
 As seguintes ferramentas foram usadas na construção do projeto:
 - HTML5
 - CSS3 
-- JS Vanilla
+- JS 
 
 Foi criado a estrutura HTML seguindo as orientações da estrutura básica de tags respeitando cada seção da página, a seguir foi realizado a estilização utilizando o princípio de variavéis e mobile-first. Ao final foi inserido JS utilizando uma biblioteca para realizar o Carrossel de depoimentos e também na criação do menu mobile/desktop.
